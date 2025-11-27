@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book & Candle | Loja Mística</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">🔮</span>
+          <div>
+            <p class="eyebrow">Book &amp; Candle</p>
+            <h1>Encantamentos que cabem no bolso</h1>
+          </div>
+        </div>
+        <nav class="actions">
+          <a class="pill" href="#catalogo">Catálogo</a>
+          <a class="pill" href="#sugestoes">Sugestões</a>
+          <a class="pill" href="#sobre">Sobre</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Loja mística brasileira</p>
+          <h2>Velas fofinhas, grimórios ilustrados e acessórios mágicos para o seu altar.</h2>
+          <p class="lede">
+            Descubra itens selecionados com cuidado, com estoque atualizado e entrega com rastreamento.
+            Tudo com a curadoria acolhedora da Book &amp; Candle.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#catalogo">Ver encantamentos</a>
+            <a class="btn ghost" href="#sobre">Como funciona</a>
+          </div>
+          <div class="hero-badges">
+            <span>✨ Frete com rastreio</span>
+            <span>🧿 Curadoria esotérica</span>
+            <span>💜 Pagamento seguro</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="orb"></div>
+          <div class="hero-card__content">
+            <p class="eyebrow">Sugestão da semana</p>
+            <h3 id="spotlight-title">Kit Lavanda Astral</h3>
+            <p class="subtitle" id="spotlight-desc">Bruma energética, vela lilás e cristais para relaxar a aura.</p>
+            <div class="price-row">
+              <span class="price" id="spotlight-price">R$ 79,90</span>
+              <span class="tag">+ frete grátis sudeste</span>
+            </div>
+            <div class="chips" id="spotlight-tags">
+              <span class="chip">calma</span>
+              <span class="chip">noturno</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogo" class="catalog">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Catálogo mágico</p>
+            <h2>Escolha o feitiço perfeito</h2>
+            <p class="lede">Filtre por categoria, pesquise pelo nome ou explore as novidades mais fofas.</p>
+          </div>
+          <div class="filters">
+            <label>
+              <span>Categoria</span>
+              <select id="category-filter">
+                <option value="">Todas</option>
+              </select>
+            </label>
+            <label>
+              <span>Busca</span>
+              <input id="search-input" type="search" placeholder="incenso, vela, cristal..." />
+            </label>
+            <label>
+              <span>Ordenar</span>
+              <select id="sort-select">
+                <option value="popularity">Mais queridos</option>
+                <option value="priceAsc">Menor preço</option>
+                <option value="priceDesc">Maior preço</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="products-grid" class="grid"></div>
+        <p id="empty-state" class="empty" hidden>Nenhum item encontrado. Tente outra palavra-chave ou categoria.</p>
+      </section>
+
+      <section id="sugestoes" class="section suggestions">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sugestões rápidas</p>
+            <h2>Combinados para cada intenção</h2>
+            <p class="lede">Pequenas seleções que combinam aromas, cores e símbolos.</p>
+          </div>
+        </div>
+        <div class="tiles">
+          <article class="tile">
+            <p class="eyebrow">Equilíbrio</p>
+            <h3>Kit Chakra Glow</h3>
+            <p>Sete velas coloridas + spray de ambiente citrus para alinhar energias.</p>
+          </article>
+          <article class="tile">
+            <p class="eyebrow">Proteção</p>
+            <h3>Caixa Olho Grego</h3>
+            <p>Incenso de mirra, turmalina negra e pingente olho grego para o dia a dia.</p>
+          </article>
+          <article class="tile">
+            <p class="eyebrow">Abundância</p>
+            <h3>Combo Canela &amp; Citrino</h3>
+            <p>Vela de canela, incenso de laranja doce e cristal citrino lapidado.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre" class="section how">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Experiência Book &amp; Candle</p>
+            <h2>Compra segura, entrega rastreada e suporte acolhedor.</h2>
+            <p class="lede">Plataforma com login seguro, gestão de pedidos e atendimento em tempo real.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-icon">🧾</span>
+            <div>
+              <h3>Checkout transparente</h3>
+              <p>Resumo claro, cálculo instantâneo e confirmação com comprovante.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-icon">📦</span>
+            <div>
+              <h3>Rastreamento fácil</h3>
+              <p>Acompanhe status, códigos de rastreio e notificações a cada fase.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-icon">💌</span>
+            <div>
+              <h3>Suporte gentil</h3>
+              <p>Operadores respondem dúvidas, registram solicitações e acompanham seu caso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>
+          <h3>Book &amp; Candle</h3>
+          <p class="lede">Produtos místicos com curadoria criativa, enviados do Brasil com carinho.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#sugestoes">Sugestões</a>
+          <a href="#sobre">Sobre</a>
+        </div>
+        <p class="tiny">Backend NestJS + front-end estático demonstrativo.</p>
+      </footer>
+    </div>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
